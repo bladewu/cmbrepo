@@ -15,20 +15,23 @@ public class Application implements java.io.Serializable
    @javax.persistence.SequenceGenerator(name = "APPLICATION_ID_GENERATOR", sequenceName = "APPLICATION_ID_SEQ")
    private java.lang.Long id;
 
-   @org.kie.api.definition.type.Label(value = "\u7533\u8ACB\u4EBA")
+   @org.kie.api.definition.type.Label("申請人")
    private java.lang.String name;
 
-   @org.kie.api.definition.type.Label(value = "\u9700\u6C42\u5BB9\u91CF(MB)")
+   @org.kie.api.definition.type.Label("需求容量(MB)")
    private java.lang.Integer quota;
 
-   @org.kie.api.definition.type.Label(value = "\u4E3B\u6A5FIP")
+   @org.kie.api.definition.type.Label("主機IP")
    private java.lang.String mountIp;
 
-   @org.kie.api.definition.type.Label(value = "\u639B\u8F09\u9EDE")
+   @org.kie.api.definition.type.Label("掛載點")
    private java.lang.String mountPoint;
 
-   @org.kie.api.definition.type.Label(value = "\u5B58\u5132IP")
+   @org.kie.api.definition.type.Label("存儲IP")
    private java.lang.String storageIp;
+
+   @org.kie.api.definition.type.Label(value = "\u72C0\u614B(\u7D50\u679C)")
+   private java.lang.String status;
 
    public Application()
    {
@@ -94,9 +97,20 @@ public class Application implements java.io.Serializable
       this.storageIp = storageIp;
    }
 
+   public java.lang.String getStatus()
+   {
+      return this.status;
+   }
+
+   public void setStatus(java.lang.String status)
+   {
+      this.status = status;
+   }
+
    public Application(java.lang.Long id, java.lang.String name,
          java.lang.Integer quota, java.lang.String mountIp,
-         java.lang.String mountPoint, java.lang.String storageIp)
+         java.lang.String mountPoint, java.lang.String storageIp,
+         java.lang.String status)
    {
       this.id = id;
       this.name = name;
@@ -104,6 +118,7 @@ public class Application implements java.io.Serializable
       this.mountIp = mountIp;
       this.mountPoint = mountPoint;
       this.storageIp = storageIp;
+      this.status = status;
    }
 
 }
