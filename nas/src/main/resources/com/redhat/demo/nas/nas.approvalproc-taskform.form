@@ -3,96 +3,56 @@
 <property name="name" value="nas.approvalproc-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="10" name="name" type="InputText" id="1185178949">
+<field position="0" name="application_id" type="InputTextLong" id="904770213">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;name (name)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="name"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="7" name="approval" type="CheckBox" id="791064197">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;approval (approval)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="approval"/>
-<property name="fieldClass" value="java.lang.Boolean"/>
-</field>
-<field position="9" name="mountPoint" type="InputText" id="1600524962">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;mountPoint (mountPoint)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="mountPoint"/>
-<property name="fieldClass" value="java.lang.String"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;單號quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="true"/>
+<property name="outputBinding" value="application/id"/>
+<property name="fieldClass" value="java.lang.Long"/>
 </field>
 <field position="1" name="application_mountIp" type="InputText" id="23542432">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;mountIp (application)quot;"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;掛載主機quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
 <property name="outputBinding" value="application/mountIp"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
 <field position="2" name="application_mountPoint" type="InputText" id="807942383">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;mountPoint (application)quot;"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;掛載點quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
 <property name="outputBinding" value="application/mountPoint"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="5" name="application_status" type="InputText" id="509317436">
+<field position="3" name="application_name" type="InputText" id="1121917003">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;status (application)quot;"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;申請人quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
-<property name="outputBinding" value="application/status"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="0" name="application_id" type="InputTextLong" id="904770213">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;id (application)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="application/id"/>
-<property name="fieldClass" value="java.lang.Long"/>
-</field>
-<field position="8" name="mountIp" type="InputText" id="1765939595">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;mountIp (mountIp)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="mountIp"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="11" name="nasIp" type="InputText" id="236012890">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;nasIp (nasIp)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="nasIp"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="outputBinding" value="application/name"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
 <field position="4" name="application_quota" type="InputTextInteger" id="1330508316">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;quota (application)quot;"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;申請容量(MB)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
 <property name="outputBinding" value="application/quota"/>
 <property name="fieldClass" value="java.lang.Integer"/>
-</field>
-<field position="3" name="application_name" type="InputText" id="1121917003">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;name (application)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="application/name"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="12" name="quota" type="InputTextInteger" id="1378081623">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;quota (quota)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="quota"/>
-<property name="fieldClass" value="java.lang.Integer"/>
-</field>
-<field position="6" name="application_storageIp" type="InputText" id="1448620480">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;storageIp (application)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="application/storageIp"/>
-<property name="fieldClass" value="java.lang.String"/>
 </field>
 <dataHolder inputId="" name="#A7E690" type="dataModelerEntry" outId="application" value="com.redhat.demo.nas.Application" id="application"/>
 <dataHolder inputId="" name="#FBB767" type="basicType" outId="approval" value="java.lang.Boolean" id="approval"/>
