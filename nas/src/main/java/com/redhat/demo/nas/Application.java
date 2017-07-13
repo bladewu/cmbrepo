@@ -5,28 +5,105 @@ package com.redhat.demo.nas;
  */
 
 @javax.persistence.Entity
-public class Application implements java.io.Serializable {
+public class Application implements java.io.Serializable
+{
 
-    static final long serialVersionUID = 1L;
+   static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "APPLICATION_ID_GENERATOR")
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(name = "APPLICATION_ID_GENERATOR", sequenceName = "APPLICATION_ID_SEQ")
-    private java.lang.Long id;
+   @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "APPLICATION_ID_GENERATOR")
+   @javax.persistence.Id
+   @javax.persistence.SequenceGenerator(name = "APPLICATION_ID_GENERATOR", sequenceName = "APPLICATION_ID_SEQ")
+   private java.lang.Long id;
 
-    public Application() {
-    }
-    
-    public Application(java.lang.Long id) {
-        this.id = id;
-    }
+   @org.kie.api.definition.type.Label(value = "\u7533\u8ACB\u4EBA")
+   private java.lang.String name;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+   @org.kie.api.definition.type.Label(value = "\u9700\u6C42\u5BB9\u91CF(MB)")
+   private java.lang.Integer quota;
+
+   @org.kie.api.definition.type.Label(value = "\u4E3B\u6A5FIP")
+   private java.lang.String mountIp;
+
+   @org.kie.api.definition.type.Label(value = "\u639B\u8F09\u9EDE")
+   private java.lang.String mountPoint;
+
+   @org.kie.api.definition.type.Label(value = "\u5B58\u5132IP")
+   private java.lang.String storageIp;
+
+   public Application()
+   {
+   }
+
+   public java.lang.Long getId()
+   {
+      return this.id;
+   }
+
+   public void setId(java.lang.Long id)
+   {
+      this.id = id;
+   }
+
+   public java.lang.String getName()
+   {
+      return this.name;
+   }
+
+   public void setName(java.lang.String name)
+   {
+      this.name = name;
+   }
+
+   public java.lang.Integer getQuota()
+   {
+      return this.quota;
+   }
+
+   public void setQuota(java.lang.Integer quota)
+   {
+      this.quota = quota;
+   }
+
+   public java.lang.String getMountIp()
+   {
+      return this.mountIp;
+   }
+
+   public void setMountIp(java.lang.String mountIp)
+   {
+      this.mountIp = mountIp;
+   }
+
+   public java.lang.String getMountPoint()
+   {
+      return this.mountPoint;
+   }
+
+   public void setMountPoint(java.lang.String mountPoint)
+   {
+      this.mountPoint = mountPoint;
+   }
+
+   public java.lang.String getStorageIp()
+   {
+      return this.storageIp;
+   }
+
+   public void setStorageIp(java.lang.String storageIp)
+   {
+      this.storageIp = storageIp;
+   }
+
+   public Application(java.lang.Long id, java.lang.String name,
+         java.lang.Integer quota, java.lang.String mountIp,
+         java.lang.String mountPoint, java.lang.String storageIp)
+   {
+      this.id = id;
+      this.name = name;
+      this.quota = quota;
+      this.mountIp = mountIp;
+      this.mountPoint = mountPoint;
+      this.storageIp = storageIp;
+   }
 
 }
