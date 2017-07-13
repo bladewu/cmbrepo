@@ -1,0 +1,96 @@
+
+<form id="1461295942">
+<property name="name" value="approvaltask-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="11" name="quota" type="InputTextInteger" id="681688065">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;quota (quota)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="quota"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="0" name="application_id" type="InputTextLong" id="772181127">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;id (application)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="application/id"/>
+<property name="fieldClass" value="java.lang.Long"/>
+</field>
+<field position="7" name="approval" type="CheckBox" id="1824123432">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;approval (approval)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="approval"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="5" name="application_status" type="InputText" id="2040901538">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;status (application)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="application/status"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="8" name="mountIp" type="InputText" id="308600668">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;mountIp (mountIp)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="mountIp"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="application_mountPoint" type="InputText" id="2094544753">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;mountPoint (application)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="application/mountPoint"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="4" name="application_quota" type="InputTextInteger" id="912580093">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;quota (application)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="application/quota"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="9" name="mountPoint" type="InputText" id="1953052288">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;mountPoint (mountPoint)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="mountPoint"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="3" name="application_name" type="InputText" id="1751758515">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (application)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="application/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="6" name="application_storageIp" type="InputText" id="1503378641">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;storageIp (application)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="application/storageIp"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="application_mountIp" type="InputText" id="1567947850">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;mountIp (application)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="application/mountIp"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="10" name="name" type="InputText" id="120028601">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (name)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#A7E690" type="dataModelerEntry" outId="application" value="com.redhat.demo.nas.Application" id="application"/>
+<dataHolder inputId="" name="#FBB767" type="basicType" outId="approval" value="java.lang.Boolean" id="approval"/>
+<dataHolder inputId="mountIp" name="#BBBBBB" type="basicType" outId="" value="java.lang.String" id="mountIp"/>
+<dataHolder inputId="mountPoint" name="#9BCAFA" type="basicType" outId="" value="java.lang.String" id="mountPoint"/>
+<dataHolder inputId="name" name="#E9E371" type="basicType" outId="" value="java.lang.String" id="name"/>
+<dataHolder inputId="quota" name="#FF54A7" type="basicType" outId="" value="java.lang.Integer" id="quota"/>
+</form>
