@@ -3,17 +3,17 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>nexus</id>
-        <url>http://localhost:8081/nexus/content/groups/public</url>
-        <source>SETTINGS</source>
+        <id>local</id>
+        <url>/Users/jasonpeng/.m2/repository</url>
+        <source>LOCAL</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>local</id>
-        <url>/Users/jasonpeng/.m2/repository</url>
-        <source>LOCAL</source>
+        <id>nexus</id>
+        <url>http://localhost:8081/nexus/content/groups/public</url>
+        <source>SETTINGS</source>
       </metadata>
     </repository>
   </repositories>
