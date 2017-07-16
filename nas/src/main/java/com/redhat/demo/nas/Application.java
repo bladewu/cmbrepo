@@ -30,8 +30,14 @@ public class Application implements java.io.Serializable
    @org.kie.api.definition.type.Label("存儲IP")
    private java.lang.String storageIp;
 
-   @org.kie.api.definition.type.Label(value = "\u72C0\u614B(\u7D50\u679C)")
+   @org.kie.api.definition.type.Label("狀態(結果)")
    private java.lang.String status;
+
+   @org.kie.api.definition.type.Label(value = "\u5E33\u865F")
+   private java.lang.String username;
+
+   @org.kie.api.definition.type.Label(value = "\u5BC6\u78BC")
+   private java.lang.String password;
 
    public Application()
    {
@@ -107,10 +113,31 @@ public class Application implements java.io.Serializable
       this.status = status;
    }
 
+   public java.lang.String getUsername()
+   {
+      return this.username;
+   }
+
+   public void setUsername(java.lang.String username)
+   {
+      this.username = username;
+   }
+
+   public java.lang.String getPassword()
+   {
+      return this.password;
+   }
+
+   public void setPassword(java.lang.String password)
+   {
+      this.password = password;
+   }
+
    public Application(java.lang.Long id, java.lang.String name,
          java.lang.Integer quota, java.lang.String mountIp,
          java.lang.String mountPoint, java.lang.String storageIp,
-         java.lang.String status)
+         java.lang.String status, java.lang.String username,
+         java.lang.String password)
    {
       this.id = id;
       this.name = name;
@@ -119,6 +146,8 @@ public class Application implements java.io.Serializable
       this.mountPoint = mountPoint;
       this.storageIp = storageIp;
       this.status = status;
+      this.username = username;
+      this.password = password;
    }
 
 }
